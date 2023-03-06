@@ -1,0 +1,197 @@
+
+/* VARIABLES ----->*/
+$main_color: #228B22
+$main_font: 'PT Mono', monospace
+    
+/* VARIABLES <-----*/
+
+html
+    font-family: $main_font
+body
+    margin: 0
+*
+    box-sizing: border-box
+
+.container
+    width: 90%
+    margin: 0 auto
+
+    
+/* HEADER -------> */
+.header
+    background: linear-gradient(to right,#a9a9a9 0%, #a9a9a9 33%, #FFE4B5 33%, #FFE4B5 66%, #FFB6C1 66%)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    .nav_main  
+        background: rgba(255, 255, 255, 0.8)
+        padding: 10px 0
+        position: fixed
+        right: 0
+        left: 0
+        z-index: 100
+        .container
+               
+            ul
+                list-style-type: none
+                display: flex
+                justify-content: flex-end          
+                a
+                    text-decoration: none
+                    color: #000
+                    li
+                        font-size: 28px
+                        line-height: 30px
+                        margin-right: 80px
+                        font-weight: 700
+                        opacity: 0.7
+                        text-transform: lowercase
+                        &:hover
+                            font-size: 28px
+                            opacity: 1
+                    
+          
+    .main_logo  
+        background-color: rgba(255, 255, 255, 0.5)
+        display: block        
+        padding: 180px 20px 
+        .container
+            margin: 0 5%                               
+            img
+                max-height: 100%
+                max-width: 100%
+/* HEADER <--------*/                
+
+/* PROMO -------> */
+.promo
+    position: relative
+    .slider
+        width: 600px
+        height: 900px
+        overflow: hidden
+        border: 10px solid #fff
+        .slides
+            width: 500%
+            height: 100%
+            display: flex
+        .slide
+            width: 25%
+            transition: all .6s ease
+            img
+                
+                
+        
+    .middle
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translateX(-50%)
+.navigation
+    position: absolute
+    bottom: 16px
+    left: 50%
+    transform: translateX(-50%)
+    display: flex
+.bar
+    height: 8px
+    width: 30px
+    margin: 6px
+    cursor: pointer
+    background-color: #ddd
+    opacity: 0.5
+    border-radius: 10px
+    transition: all .4s ease
+    &:hover
+        opacity: 0.9
+        transform: scale(1.2)
+input[name="r"]
+    position: absolute
+    visibility: hidden
+
+#r1:checked ~ .s1
+    margin-left: 0
+#r2:checked ~ .s1
+    margin-left: -25%
+#r3:checked ~ .s1
+    margin-left: -50%
+#r4:checked ~ .s1
+    margin-left: -75%
+#r5:checked ~ .s1
+    margin-left: -100%
+
+
+
+   
+
+
+
+
+
+
+        
+       
+       
+        
+        
+
+       
+
+      
+
+           
+            
+
+            
+
+
+/* PROMO <--------*/ 
+
+/* ADAPTATION ----->*/  
+@media (max-width: 850px)
+    .header
+        .nav_main
+            display: flex
+            
+            .container
+                ul
+                    display: flex
+                    justify-content: flex-end
+                    a
+                        li
+                            font-size: 22px
+                            line-height: 30px
+                            margin-right: 40px
+                            font-weight: 700
+                            opacity: 0.7
+                            text-transform: lowercase
+                            &:hover
+                                font-size: 22px
+                                opacity: 1
+@media (max-width: 540px)
+    .header
+        .nav_main
+            display: none
+            
+            .container
+                ul                   
+                    a
+                        li
+                            font-size: 22px
+                            line-height: 30px
+                            margin-right: 40px
+                            font-weight: 700
+                            opacity: 0.7
+                            text-transform: lowercase
+                            &:hover
+                                font-size: 22px
+                                opacity: 1     
+@media (max-width: 280px)     
+    .header
+        .nav_main
+            display: none
+        .main_logo   
+            display: inline-block        
+            padding: 40px 10px 
+/* ADAPTATION <-----*/  
+        
+
